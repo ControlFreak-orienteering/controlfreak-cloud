@@ -1,0 +1,26 @@
+{
+  "name": "controlfreak-cloud",
+  "version": "0.1.0",
+  "description": "What the ControlFreak family's apps share for Lovable Cloud (Supabase): the sign-in for invited users, the fetch with the app's key, and the encryption and four-word passphrases behind sharing by link.",
+  "license": "MIT",
+  "author": "Henrik Flordal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ControlFreak-orienteering/controlfreak-cloud.git"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
